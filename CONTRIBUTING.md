@@ -13,7 +13,7 @@ We welcome contributions from the community to make **Smart Home Manager** bette
 ### **2. Clone Your Fork**
 - Clone your forked repository to your local machine:
   ```bash
-  git clone https://github.com/your-username/smart-home-manager.git
+  git clone https://github.com/alienx5499/smart-home-manager.git
   ```
 - Replace `your-username` with your GitHub username.
 
