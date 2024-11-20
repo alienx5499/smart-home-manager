@@ -1,66 +1,61 @@
-/* General Styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-  }
-  
-  .header {
-    background-color: #2d89ef;
-    padding: 10px 20px;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-  }
-  
-  .nav-links li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .hero-section {
-    text-align: center;
-    padding: 50px;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: white;
-  }
-  
-  .cta-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: white;
-    color: #2d89ef;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .features-section {
-    padding: 20px;
-  }
-  
-  .feature-card {
-    margin: 20px 0;
-  }
-  
-  .dashboard-cards {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .signup-form, .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 300px;
-    margin: auto;
-  }
+/* Why Choose Us Section */
+.why-choose-us {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f3f4f6;
+}
+
+.benefits-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.benefit {
+  max-width: 300px;
+  text-align: left;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.testimonial-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* FAQ Section */
+.faq-container {
+  padding: 50px 20px;
+  text-align: left;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  background-color: #2d89ef;
+  color: white;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons img {
+  width: 24px;
+  margin: 0 10px;
+}
