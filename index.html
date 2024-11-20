@@ -3,133 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Home Manager</title>
+  <title>Cool Ark Navbar</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- Header Section -->
-  <header class="header">
-    <nav class="navbar">
-      <a href="index.html" class="nav-logo">Smart Home Manager</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="signup.html">Sign Up</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav class="ark-navbar">
+    <div class="logo">Smart Home Manager</div>
+    <ul class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="features.html">Features</a>
+      <a href="#">Pricing</a>
+      <a href="#">About</a>
+      <a href="contact.html">Contact</a>
+      <button class="signin-btn" id="side" onclick="location.href='signup.html';">Sign In / Register</button>
+    </ul>
+    <div class="nav-toggle">&#9776;</div>
+  </nav>
 
-  <!-- Hero Section -->
-  <main class="hero-section">
-    <div class="hero-content">
-      <h1>Simplify Your Home, Elevate Your Life</h1>
-      <p>Effortlessly manage your home with smart solutions for energy, pets, and chores.</p>
-      <a href="signup.html" class="cta-button">Get Started</a>
-    </div>
+  <main class="contact-section">
+    <h1>Contact Us</h1>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
   </main>
-
-  <!-- Why Choose Us Section -->
-  <section class="why-choose-us">
-    <h2>Why Choose Smart Home Manager?</h2>
-    <div class="benefits-container">
-      <div class="benefit">
-        <h3>Save Energy</h3>
-        <p>Track and optimize your energy usage to save on bills.</p>
-      </div>
-      <div class="benefit">
-        <h3>Care for Pets</h3>
-        <p>Monitor and manage your pet's schedule effortlessly.</p>
-      </div>
-      <div class="benefit">
-        <h3>Stay Organized</h3>
-        <p>Automate household chores and never miss a task.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features Overview Section -->
-  <section class="features-overview">
-    <h2>Explore Our Features</h2>
-    <div class="feature-cards">
-      <div class="feature-card">
-        <h3>Home Energy Optimizer</h3>
-        <p>Analyze and reduce your energy consumption with actionable insights.</p>
-        <a href="features.html" class="feature-link">Learn More</a>
-      </div>
-      <div class="feature-card">
-        <h3>Pet Care Assistant</h3>
-        <p>Track feeding schedules and receive personalized activity tips for your pets.</p>
-        <a href="features.html" class="feature-link">Learn More</a>
-      </div>
-      <div class="feature-card">
-        <h3>Household Task Automator</h3>
-        <p>Schedule and organize household tasks efficiently with reminders.</p>
-        <a href="features.html" class="feature-link">Learn More</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section class="testimonials">
-    <h2>What Our Users Say</h2>
-    <div class="testimonial-cards">
-      <div class="testimonial">
-        <p>"Smart Home Manager transformed how I manage my home. It's so easy to use!"</p>
-        <h4>- Sarah J.</h4>
-      </div>
-      <div class="testimonial">
-        <p>"The energy optimizer saved me a lot on electricity bills. Highly recommend!"</p>
-        <h4>- Michael K.</h4>
-      </div>
-      <div class="testimonial">
-        <p>"I love how I can monitor my pets even when I'm away. A must-have for pet owners."</p>
-        <h4>- Linda P.</h4>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section class="faq">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-container">
-      <div class="faq-item">
-        <h3>How does the energy optimizer work?</h3>
-        <p>The energy optimizer analyzes your usage patterns and suggests actionable ways to reduce consumption.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Can I sync my pet's data with wearables?</h3>
-        <p>Yes, Smart Home Manager supports integration with popular pet wearables.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Is the platform free to use?</h3>
-        <p>We offer a free plan with basic features and premium plans for advanced functionality.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call-to-Action Section -->
-  <section class="cta-section">
-    <h2>Ready to Simplify Your Life?</h2>
-    <p>Sign up today and experience the convenience of a smart home.</p>
-    <a href="signup.html" class="cta-button">Get Started Now</a>
-  </section>
-
-  <!-- Footer Section -->
-  <footer class="footer">
-    <div class="footer-content">
-      <p>&copy; 2024 Smart Home Manager. All Rights Reserved.</p>
-      <ul class="footer-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="social-icons">
-        <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-        <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
-        <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
-      </div>
-    </div>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
