@@ -1,66 +1,212 @@
-/* General Styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-  }
+/* Reset and base styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: #121212;
+  color: #fff;
+}
+
+.ark-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: #1e1e1e;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Styles */
+.ark-navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00c3ff;
+  text-shadow: 0 0 10px #00c3ff, 0 0 20px #00c3ff;
+}
+
+/* Centering nav-links */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0 ;
+  padding: 0;
+}
+
+/* Navigation Links Float Shadow Hover Effect */
+.nav-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  color: #00c3ff;
+  transform: translateY(-3px); /* Floating effect */
+  box-shadow: 0 0 20px rgba(0, 195, 255, 0.5); /* Even glowing shadow */
+}
+
+/* Default active button styling */
+.nav-links a.active {
+  color: #00c3ff;
+  box-shadow: 0 0 20px rgba(0, 195, 255, 0.5); /* Glowing shadow */
+  transform: translateY(-3px); /* Floating effect for consistency */
+  font-weight: bold; 
   
-  .header {
-    background-color: #2d89ef;
-    padding: 10px 20px;
-  }
+}
+
+/* Remove hover effect for the active button */
+.nav-links a.active:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.nav-links button {
+  padding: 0.5rem 1rem;
+  border: 2px solid #00c3ff;
+  background: transparent;
+  color: #00c3ff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%; 
+  text-align: center;
   
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+.nav-links button:hover {
+  background: #00c3ff;
+  color: #1e1e1e;
+  box-shadow: 0 0 10px #00c3ff, 0 0 20px #00c3ff;
+}
+#side{
+  margin-left: 300px;
+}
+
+/* Update for small screens */
+@media (max-width: 1390px) {
+  .ark-navbar {
+      justify-content: center;
+      position: relative;
+      height: 35px;
   }
-  
+
+  /* Center the logo at the top of the navbar */
+  .logo {
+      position: absolute;
+      top: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+  }
+  .nav-links a {
+      width: 150px;
+
+  }
+
+  /* Sidebar menu on the left */
   .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
+      display: none; /* Hidden by default */
+      position: absolute;
+      top: 0;
+      left: -250px; /* Initially off-screen to the left */
+      width: 250px;
+      height: 100%;
+      background-color: #1e1e1e;
+      flex-direction: column;
+      padding-top: 4rem; /* Add space for logo */
+      gap: 1rem;
+      box-shadow: 4px 0 10px rgba(0, 0, 0, 0.7);
+      transition: all 0.3s ease;
+      z-index: 1; /* Sidebar is under the logo */
+  }
+
+  /* Sidebar visible when active */
+  .nav-links.active {
+      left: 0; /* Move the sidebar into view */
+      display: flex;
+      height: 760px;
+      align-items: center;
+  }
+
+  /* Style for individual menu items */
+  .nav-links li {
+      text-align: center;
+      width: 100%;
+  }
+
+  /* Show the nav toggle (hamburger) button */
+  .nav-toggle {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1.5rem;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+      z-index: 3;
   }
   
-  .nav-links li a {
-    color: white;
-    text-decoration: none;
+  /* Authentication Buttons inside Sidebar */
+  .nav-links  button {
+      padding: 0.5rem 1rem;
+      border: 2px solid #00c3ff;
+      background: transparent;
+      color: #00c3ff;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 80%;
+      text-align: center;
+      
   }
-  
-  .hero-section {
-    text-align: center;
-    padding: 50px;
-    background: linear-gradient(to right, #6a11cb, #2575fc);
-    color: white;
+  #side{
+      margin-top: 460px;
+      margin-left: 0px;
   }
-  
-  .cta-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: white;
-    color: #2d89ef;
-    text-decoration: none;
-    border-radius: 5px;
+
+  .nav-links  button:hover {
+      background: #00c3ff;
+      color: #1e1e1e;
+      box-shadow: 0 0 10px #00c3ff, 0 0 20px #00c3ff;
   }
-  
-  .features-section {
-    padding: 20px;
+}
+
+/* Hide the sidebar toggle on larger screens */
+@media (min-width: 769px) {
+  .nav-toggle {
+      display: none;
   }
-  
-  .feature-card {
-    margin: 20px 0;
-  }
-  
-  .dashboard-cards {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .signup-form, .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 300px;
-    margin: auto;
-  }
+}
+
+/* Authentication Buttons for Desktop */
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.auth-buttons .signin-btn,
+.auth-buttons .register-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #00c3ff;
+  background: transparent;
+  color: #00c3ff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-buttons .signin-btn:hover,
+.auth-buttons .register-btn:hover {
+  background: #00c3ff;
+  color: #1e1e1e;
+  box-shadow: 0 0 10px #00c3ff, 0 0 20px #00c3ff;
+}
