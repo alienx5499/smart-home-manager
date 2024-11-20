@@ -4,8 +4,8 @@
 # 🌟 Smart Home Manager 🌟
 
 ![Build Passing](https://img.shields.io/badge/build-passing-color=%2354cb1b)
-![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/alienx5499/smart-home-manager/blob/main/CONTRIBUTING.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/alienx5499/smart-home-manager/blob/main/LICENSE)
 ![Security](https://snyk.io/test/github/dwyl/hapi-auth-jwt2/badge.svg?targetFile=package.json)
 ![⭐ GitHub stars](https://img.shields.io/github/stars/alienx5499/smart-home-manager?style=social)
 ![🍴 GitHub forks](https://img.shields.io/github/forks/alienx5499/smart-home-manager?style=social)
