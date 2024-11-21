@@ -1,5 +1,3 @@
-
-
 // Toggling navigation visibility on small screens
 const navToggle = document.querySelector('.nav-toggle');
 const navLinksContainer = document.querySelector('.nav-links'); // To control the nav menu visibility

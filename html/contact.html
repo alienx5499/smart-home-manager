@@ -9,14 +9,17 @@
 </head>
 <body>
   <header class="header">
-    <nav class="navbar">
-      <a href="../index.html" class="nav-logo">Smart Home Manager</a>
+    <nav class="ark-navbar">
+      <div class="logo">Smart Home Manager</div>
       <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="signup.html">Sign Up</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <a href="../index.html" >Home</a>
+        <a href="../html/features.html">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">About</a>
+        <a href="../html/contact.html" class="active">Contact</a>
+        <button class="signin-btn" id="side" onclick="location.href='../html/signup.html';">Sign In / Register</button>
       </ul>
+      <div class="nav-toggle">&#9776;</div>
     </nav>
   </header>
 
@@ -58,6 +61,7 @@
   <footer class="footer">
     <p>&copy; 2024 Smart Home Manager. All rights reserved.</p>
   </footer>
+  <script src="..//js/contact.js"></script>
 </body>
 </html>
 
