@@ -8,14 +8,48 @@
 </head>
 <body>
   <header class="header">
-    <nav class="navbar">
-      <a href="../index.html" class="nav-logo">Smart Home Manager</a>
+    <nav class="ark-navbar">
+      <div class="logo">Smart Home Manager</div>
       <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="features.html">Features</a></li>
-        <li><a href="signup.html">Sign Up</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <a href="../index.html">
+          <svg viewBox="0 0 16 16" class="bi bi-lightning-charge-fill" fill="currentColor" height="16" width="16"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
+                    </path>
+                  </svg>
+                  Home
+        </a>
+        <a href="features.html">
+          <svg viewBox="0 0 16 16" class="bi bi-lightning-charge-fill" fill="currentColor" height="16" width="16"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
+                    </path>
+                  </svg>
+          Features
+        </a>
+        <a href="dashboard.html"  class="active">
+          <svg viewBox="0 0 16 16" class="bi bi-lightning-charge-fill" fill="currentColor" height="16" width="16"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
+                    </path>
+                  </svg>
+          Dashboard
+        </a>
+        <a href="contact.html">
+          <svg viewBox="0 0 16 16" class="bi bi-lightning-charge-fill" fill="currentColor" height="16" width="16"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
+                    </path>
+                  </svg>
+          Contact
+        </a>
+        <button class="signin-btn" id="side" onclick="location.href='signup.html';">Sign In / Register</button>
       </ul>
+      <div class="nav-toggle">&#9776;</div>
     </nav>
   </header>
 
@@ -36,5 +70,6 @@
       </div>
     </div>
   </main>
+  <Script src="../js/dashboard.js"></Script>
 </body>
 </html>
