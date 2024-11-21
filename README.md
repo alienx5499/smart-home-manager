@@ -11,6 +11,7 @@
 ![Security](https://snyk.io/test/github/dwyl/hapi-auth-jwt2/badge.svg?targetFile=package.json)
 ![⭐ GitHub stars](https://img.shields.io/github/stars/alienx5499/smart-home-manager?style=social)
 ![🍴 GitHub forks](https://img.shields.io/github/forks/alienx5499/smart-home-manager?style=social)
+![Commits](https://badgen.net/github/commits/alienx5499/smart-home-manager)
 ![🐛 GitHub issues](https://img.shields.io/github/issues/alienx5499/smart-home-manager)
 ![📂 GitHub pull requests](https://img.shields.io/github/issues-pr/alienx5499/smart-home-manager)
 ![💾 GitHub code size](https://img.shields.io/github/languages/code-size/alienx5499/smart-home-manager)
