@@ -20,7 +20,7 @@ We recommend upgrading to the latest version for continued security and performa
 If you discover a security vulnerability in our website, we encourage you to report it to us promptly. Please follow the steps below to ensure that your report is handled responsibly:
 
 ### How to Report:
-1. **Email**: Send details of the vulnerability to **security@yourwebsite.com**.
+1. **Email**: Send details of the vulnerability to **p2005p5499p@gmail.com**.
 2. **Details Required**:
    - A clear and detailed description of the vulnerability.
    - Steps to reproduce the issue (if applicable).
@@ -40,6 +40,6 @@ We kindly request that you avoid publicly disclosing the vulnerability until it 
 
 ## Our Commitment to Security
 
-We value the trust of our users and are committed to providing a secure and reliable platform. Your contributions to our security help us maintain a safe environment for everyone. If you have any questions or concerns, please do not hesitate to contact us at **security@yourwebsite.com**.
+We value the trust of our users and are committed to providing a secure and reliable platform. Your contributions to our security help us maintain a safe environment for everyone. If you have any questions or concerns, please do not hesitate to contact us at **p2005p5499p@gmail.com**.
 
 Thank you for your support in keeping our platform secure!
