@@ -235,6 +235,26 @@ input[type="submit"]:active {
   touch-action: manipulation;
   white-space: nowrap;
   letter-spacing: 4px;
+  
+  /*! Other Gradients We Can Use !*/
+
+  /* Yellow to Orange Glow:
+    background-image: linear-gradient(144deg, #ffcc00, #ff9900 50%, #ff6600);
+  */
+
+  /* Yellow to Coral:
+    background-image: linear-gradient(144deg, #ffff00, #ff7f50 50%, #ff6347);
+  */
+
+  /* Bright Yellow to Purple Glow:
+    background-image: linear-gradient(144deg, #ffff00, #af40ff 50%, #9d00ff);
+  */
+
+  /* Yellow to Bright Cyan:
+    background-image: linear-gradient(144deg, #ffff00, #00ffcc 50%, #00ffff);
+  */
+
+
   background-image: linear-gradient(144deg, #ffff00, #ffea00 25%, #af40ff 75%, #9d00ff); /* Gradient background */
   box-shadow: 0 0 15px #ffff00, 0 0 25px #ffea00, 0 0 35px #af40ff, 0 0 45px #9d00ff;
 
