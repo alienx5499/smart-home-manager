@@ -248,3 +248,104 @@ transform: scale(1.05);
   display: flex;
   gap: 1rem;
 }
+
+/* Main Section Styling */
+.features-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Feature Card */
+.feature-card {
+  background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+  max-width: 700px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  box-shadow: 0 0 20px #ffea00, 0 0 30px #af40ff, 0 0 40px #9d00ff;
+  transform: scale(1.05); /* Slightly enlarge card */
+}
+
+/* Feature Title */
+.feature-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Feature Description */
+.feature-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #f9f9f9;
+}
+
+/* Feature List */
+.feature-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.feature-card ul li {
+  margin: 0.5rem 0;
+  padding-left: 1rem;
+  text-align: left;
+  position: relative;
+  font-size: 1rem;
+}
+
+.feature-card ul li::before {
+  content: '✔';
+  color: #ffea00;
+  margin-right: 0.5rem;
+  position: absolute;
+  left: 0;
+}
+
+/* Buttons */
+.feature-button {
+  background: #af40ff;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.2s ease-in-out;
+}
+
+.feature-button:hover {
+  background: #9d00ff;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feature-card {
+    padding: 1rem;
+  }
+
+  .feature-card h2 {
+    font-size: 1.8rem;
+  }
+
+  .feature-card p {
+    font-size: 1rem;
+  }
+
+  .feature-card ul li {
+    font-size: 0.9rem;
+  }
+
+  .feature-button {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
