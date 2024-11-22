@@ -54,21 +54,69 @@
   </header>
 
   <main class="dashboard-section">
-    <h1>Welcome to Your Dashboard</h1>
-    <div class="dashboard-cards">
-      <div class="dashboard-card">
-        <h2>Energy Insights</h2>
-        <p>Check your energy usage trends and optimize for savings.</p>
+    <!-- Section: Main Heading -->
+    <header class="dashboard-header">
+      <h1>Energy Management Dashboard</h1>
+      <p>Monitor, analyze, and optimize your energy usage for a sustainable future.</p>
+    </header>
+  
+    <!-- Section: Overview Cards -->
+    <section class="dashboard-overview">
+      <article class="dashboard-card" aria-labelledby="current-usage">
+        <h2 id="current-usage">Current Energy Usage</h2>
+        <div class="gauge-chart" aria-label="Gauge showing current usage at 75%">
+          <p class="highlight">75%</p>
+        </div>
+        <p>Real-time usage: <span class="highlight">45.7 kWh</span></p>
+      </article>
+  
+      <article class="dashboard-card" aria-labelledby="monthly-consumption">
+        <h2 id="monthly-consumption">Monthly Consumption</h2>
+        <div class="card-content">
+          <p>Total: <span class="highlight">360 kWh</span></p>
+          <p>Cost: <span class="highlight">$85.60</span></p>
+          <p>Carbon Footprint: <span class="highlight">290 kg CO<sub>2</sub></span></p>
+        </div>
+      </article>
+  
+      <article class="dashboard-card" aria-labelledby="energy-trends">
+        <h2 id="energy-trends">Energy Trends</h2>
+        <div class="chart-placeholder" aria-label="Energy usage trends chart placeholder">
+          <p>Trends Chart (e.g., week-over-week)</p>
+        </div>
+      </article>
+  
+      <article class="dashboard-card" aria-labelledby="savings-tips">
+        <h2 id="savings-tips">Savings Tips</h2>
+        <ul class="savings-tips">
+          <li>Optimize appliance usage during off-peak hours.</li>
+          <li>Switch to energy-efficient bulbs.</li>
+          <li>Consider solar panels for sustainable energy.</li>
+        </ul>
+      </article>
+    </section>
+  
+    <!-- Section: Analytics -->
+    <section class="analytics-section">
+      <header class="analytics-header">
+        <h2>Detailed Analytics</h2>
+        <p>Gain deeper insights into your energy usage patterns.</p>
+      </header>
+      <div class="analytics-grid">
+        <article class="analytics-card" aria-labelledby="appliance-breakdown">
+          <h3 id="appliance-breakdown">Appliance Breakdown</h3>
+          <div class="chart-placeholder" aria-label="Appliance energy usage pie chart">
+            Pie Chart Placeholder
+          </div>
+        </article>
+        <article class="analytics-card" aria-labelledby="peak-hours">
+          <h3 id="peak-hours">Peak Hours</h3>
+          <div class="chart-placeholder" aria-label="Peak energy usage bar chart">
+            Bar Chart Placeholder
+          </div>
+        </article>
       </div>
-      <div class="dashboard-card">
-        <h2>Pet Tracker</h2>
-        <p>Stay updated on your pet's schedule and activities.</p>
-      </div>
-      <div class="dashboard-card">
-        <h2>Task Scheduler</h2>
-        <p>Organize and automate your household chores.</p>
-      </div>
-    </div>
+    </section>
   </main>
   <Script src="../js/dashboard.js"></Script>
 </body>
