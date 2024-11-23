@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>XenovaEdge Features</title>
   <link rel="stylesheet" href="../css/features.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../js/features.js" defer></script>
 </head>
 
 <body>
@@ -56,73 +58,31 @@
   </header>
 
   <main class="features-section">
-    <!-- Feature 1 -->
     <section class="feature-card">
       <h2>🌍 Home Energy Optimizer</h2>
-      <p>Gain control over your energy usage with detailed insights and actionable suggestions. Schedule device
-        operations to minimize electricity waste and reduce your carbon footprint effortlessly.</p>
-      <ul>
-        <li>Real-time energy consumption tracking.</li>
-        <li>Customizable energy-saving schedules.</li>
-        <li>Personalized tips for efficiency.</li>
-      </ul>
-      <button class="feature-button" onclick="optimizeNow()">Optimize Now</button>
+      <canvas id="energyChart" width="400" height="200"></canvas>
     </section>
 
-    <!-- Feature 2 -->
     <section class="feature-card">
       <h2>🐾 Pet Care Assistant</h2>
-      <p>Take the stress out of pet care with our automated assistant. Monitor feeding schedules, track activity, and
-        receive health alerts to ensure your furry friends are happy and healthy.</p>
-      <ul>
-        <li>Automated feeding reminders.</li>
-        <li>Activity and health tracking.</li>
-        <li>Instant notifications for pet care.</li>
-      </ul>
-      <button class="feature-button" onclick="monitorPets()">Monitor Pets</button>
+      <canvas id="petChart" width="400" height="200"></canvas>
     </section>
 
-    <!-- Feature 3 -->
     <section class="feature-card">
       <h2>📅 Household Task Automator</h2>
-      <p>Streamline your household management with intelligent scheduling. From daily chores to seasonal maintenance,
-        stay organized and stress-free with our smart task automator.</p>
-      <ul>
-        <li>Customizable chore scheduling.</li>
-        <li>Weather-aware task planning.</li>
-        <li>Maintenance reminders for appliances.</li>
-      </ul>
-      <button class="feature-button" onclick="scheduleTasks()">Schedule Tasks</button>
+      <canvas id="taskChart" width="400" height="200"></canvas>
     </section>
 
-    <!-- Feature 4 -->
     <section class="feature-card">
       <h2>💧 Water Tank Automation</h2>
-      <p>Eliminate water wastage with intelligent water tank management. Prevent overflows, track consumption, and
-        automate refills for optimal water resource utilization.</p>
-      <ul>
-        <li>Real-time water level monitoring.</li>
-        <li>Overflow prevention and alerts.</li>
-        <li>Smart refill automation.</li>
-      </ul>
-      <button class="feature-button" onclick="manageWater()">Manage Water</button>
+      <canvas id="waterChart" width="400" height="200"></canvas>
     </section>
 
-    <!-- Feature 5 -->
     <section class="feature-card">
       <h2>👨‍⚕️ Elder Care Support</h2>
-      <p>Ensure the safety and well-being of your elderly loved ones with advanced health and emergency features. Stay
-        connected and provide the care they deserve, even when you're away.</p>
-      <ul>
-        <li>Fall detection and alerts.</li>
-        <li>Medication reminders.</li>
-        <li>One-touch emergency assistance.</li>
-      </ul>
-      <button class="feature-button" onclick="elderCare()">Explore Features</button>
+      <canvas id="elderChart" width="400" height="200"></canvas>
     </section>
   </main>
-
-  <script src="../js/features.js"></script>
 </body>
 
 </html>
