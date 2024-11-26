@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>User Dashboard</title>
+  <title>XenovaEdge - User Dashboard</title>
   <link rel="stylesheet" href="../css/dashboard.css">
 </head>
+
 <body>
+  <!-- Header Section -->
   <header class="header">
+    <header class="header">
     <nav class="ark-navbar">
       <div class="logo">XenovaEdge</div>
       <ul class="nav-links">
@@ -53,15 +57,17 @@
     </nav>
   </header>
 
+  <!-- Main Dashboard Section -->
   <main class="dashboard-section">
-    <!-- Section: Main Heading -->
+    <!-- Main Heading -->
     <header class="dashboard-header">
       <h1>Energy Management Dashboard</h1>
       <p>Monitor, analyze, and optimize your energy usage for a sustainable future.</p>
     </header>
-  
-    <!-- Section: Overview Cards -->
+
+    <!-- Overview Cards -->
     <section class="dashboard-overview">
+      <!-- Current Energy Usage -->
       <article class="dashboard-card" aria-labelledby="current-usage">
         <h2 id="current-usage">Current Energy Usage</h2>
         <div class="gauge-chart" aria-label="Gauge showing current usage at 75%">
@@ -69,7 +75,8 @@
         </div>
         <p>Real-time usage: <span class="highlight">45.7 kWh</span></p>
       </article>
-  
+
+      <!-- Monthly Consumption -->
       <article class="dashboard-card" aria-labelledby="monthly-consumption">
         <h2 id="monthly-consumption">Monthly Consumption</h2>
         <div class="card-content">
@@ -78,14 +85,16 @@
           <p>Carbon Footprint: <span class="highlight">290 kg CO<sub>2</sub></span></p>
         </div>
       </article>
-  
+
+      <!-- Energy Trends -->
       <article class="dashboard-card" aria-labelledby="energy-trends">
         <h2 id="energy-trends">Energy Trends</h2>
         <div class="chart-placeholder" aria-label="Energy usage trends chart placeholder">
           <p>Trends Chart (e.g., week-over-week)</p>
         </div>
       </article>
-  
+
+      <!-- Savings Tips -->
       <article class="dashboard-card" aria-labelledby="savings-tips">
         <h2 id="savings-tips">Savings Tips</h2>
         <ul class="savings-tips">
@@ -95,29 +104,64 @@
         </ul>
       </article>
     </section>
-  
-    <!-- Section: Analytics -->
+
+    <!-- Analytics Section -->
     <section class="analytics-section">
       <header class="analytics-header">
         <h2>Detailed Analytics</h2>
         <p>Gain deeper insights into your energy usage patterns.</p>
       </header>
       <div class="analytics-grid">
+        <!-- Appliance Breakdown -->
         <article class="analytics-card" aria-labelledby="appliance-breakdown">
           <h3 id="appliance-breakdown">Appliance Breakdown</h3>
           <div class="chart-placeholder" aria-label="Appliance energy usage pie chart">
-            Pie Chart Placeholder
+            <p>Pie Chart Placeholder</p>
           </div>
         </article>
+
+        <!-- Peak Hours -->
         <article class="analytics-card" aria-labelledby="peak-hours">
           <h3 id="peak-hours">Peak Hours</h3>
           <div class="chart-placeholder" aria-label="Peak energy usage bar chart">
-            Bar Chart Placeholder
+            <p>Bar Chart Placeholder</p>
           </div>
         </article>
       </div>
     </section>
   </main>
-  <Script src="../js/dashboard.js"></Script>
+
+  <!-- Footer Section -->
+<footer class="xenova-footer">
+  <div class="footer-content">
+    <!-- Project Name -->
+    <h2 class="footer-title">XenovaEdge</h2>
+    <p class="footer-tagline">Empowering Smarter Homes. Enabling Sustainable Lifestyles.</p>
+
+    <!-- Navigation Links -->
+    <nav class="footer-nav">
+      <a href="../index.html" class="footer-link">Home</a>
+      <a href="features.html" class="footer-link">Features</a>
+      <a href="dashboard.html" class="footer-link">Dashboard</a>
+      <a href="contact.html" class="footer-link">Contact</a>
+    </nav>
+
+    <!-- Social Media Links -->
+    <div class="social-links">
+      <a href="#" class="footer-link">GitHub</a>
+      <a href="#" class="footer-link">LinkedIn</a>
+      <a href="#" class="footer-link">Twitter</a>
+    </div>
+
+    <!-- Copyright and Credits -->
+    <p class="footer-credits">
+      &copy; 2024 XenovaEdge. All Rights Reserved. | Designed with 💡 by Passionate Innovators.
+    </p>
+  </div>
+</footer>
+
+  <!-- Script Section -->
+  <script src="../js/dashboard.js"></script>
 </body>
+
 </html>
