@@ -3,60 +3,60 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Smart Home Manager</title>
-  <link rel="stylesheet" href="../css/contact.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="../css/signin.css">
+
 </head>
 
 <body>
 
-  <header class="header">
+  <header>
     <nav class="ark-navbar">
       <div class="logo">XenovaEdge</div>
       <ul class="nav-links">
-        <a href="../index.html">
+        <a href="../index.html" >
           <svg viewBox="0 0 16 16" class="bi bi-lightning-charge-fill" fill="currentColor" height="16" width="16"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
-            </path>
-          </svg>
-          Home
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
+                    </path>
+                  </svg>
+                  Home
         </a>
         <a href="features.html">
           <svg viewBox="0 0 16 16" class="bi bi-lightning-charge-fill" fill="currentColor" height="16" width="16"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
-            </path>
-          </svg>
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
+                    </path>
+                  </svg>
           Features
         </a>
         <a href="dashboard.html">
           <svg viewBox="0 0 16 16" class="bi bi-lightning-charge-fill" fill="currentColor" height="16" width="16"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
-            </path>
-          </svg>
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
+                    </path>
+                  </svg>
           Dashboard
         </a>
-        <a href="html/contact.html" class="active">
+        <a href="contact.html">
           <svg viewBox="0 0 16 16" class="bi bi-lightning-charge-fill" fill="currentColor" height="16" width="16"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
-            </path>
-          </svg>
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
+                    </path>
+                  </svg>
           Contact
         </a>
-        <button class="signin-btn" id="side" onclick="location.href='signin.html';">Sign In / Register</button>
       </ul>
       <div class="nav-toggle">&#9776;</div>
     </nav>
   </header>
+
   <section>
+
     <span></span>
     <span></span>
     <span></span>
@@ -317,72 +317,34 @@
     <span></span>
     <span></span>
     <span></span>
+
+    <div class="signin">
+      <div class="content">
+        <h2>Sign In</h2>
+        <div class="form">
+          <div class="inputBox">
+            <input type="text" required>
+            <i>Username</i>
+          </div>
+          <div class="inputBox">
+            <input type="password" required>
+            <i>Password</i>
+          </div>
+          <div class="links">
+            <a href="#">Forgot Password</a>
+            <a href="signup.html">Sign Up</a>
+          </div>
+          <div class="inputBox">
+            <input type="submit" value="Login">
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
-  <main class="contact-section">
-    <div class="contact-container">
-      <h1>Contact Us</h1>
-      <p id="">We'd love to hear from you! Fill out the form below or reach us directly through our contact details.</p>
+  <!-- partial -->
 
-      <div class="contact-info">
-        <div class="info-item">
-          <i class="fas fa-envelope split-icon"></i>
-          <p class="txetAPE">Email: support@smarthomemanager.com</p>
-        </div>
-        <div class="info-item">
-          <i class="fas fa-phone split-icon"></i>
-          <p class="txetAPE">Phone: +1 234 567 890</p>
-        </div>
-        <div class="info-item">
-          <i class="fas fa-map-marker-alt split-icon"></i>
-          <p class="txetAPE">Address: 123 Smart Home Street, Tech City</p>
-        </div>
-      </div>
+<script src="../js/signin.js"></script>
 
-      <form class="contact-form">
-        <div class="form-group">
-          <input type="text" id="name" placeholder="Your Name" font-style="normal" font-size="10px" required>
-        </div>
-        <div class="form-group">
-          <input type="email" id="email" placeholder="Your Email" required>
-        </div>
-        <div class="form-group">
-          <textarea id="message" placeholder="Your Message" font-style="normal" required></textarea>
-        </div>
-        <button type="submit" class="submit-btn">Send Message</button>
-      </form>
-    </div>
-  </main>
-
-  <!-- Footer Section -->
-  <footer class="xenova-footer">
-    <div class="footer-content">
-      <!-- Project Name -->
-      <h2 class="footer-title">XenovaEdge</h2>
-      <p class="footer-tagline">Empowering Smarter Homes. Enabling Sustainable Lifestyles.</p>
-
-      <!-- Navigation Links -->
-      <nav class="footer-nav">
-        <a href="../index.html" class="footer-link">Home</a>
-        <a href="features.html" class="footer-link">Features</a>
-        <a href="dashboard.html" class="footer-link">Dashboard</a>
-        <a href="contact.html" class="footer-link">Contact</a>
-      </nav>
-
-      <!-- Social Media Links -->
-      <div class="social-links">
-        <a href="#" class="footer-link">GitHub</a>
-        <a href="#" class="footer-link">LinkedIn</a>
-        <a href="#" class="footer-link">Twitter</a>
-      </div>
-
-      <!-- Copyright and Credits -->
-      <p class="footer-credits">
-        &copy; 2024 XenovaEdge. All Rights Reserved. | Designed with 💡 by Passionate Innovators.
-      </p>
-    </div>
-  </footer>
-
-  <script src="..//js/contact.js"></script>
 </body>
 
 </html>
