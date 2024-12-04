@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 * {
   box-sizing: border-box;
 }
@@ -283,9 +294,10 @@ html {
   left: 0;
   width: 100%;
   background: #1e1e1e;
-  color: #fff;
-  padding: 1rem 2rem;
+  color: #fff; /* White text */
+  padding: 1rem 2rem; 
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  z-index: 1000; /* Ensures it stays on top */
   text-align: center;
   font-family: Arial, sans-serif;
 }
@@ -302,5 +314,30 @@ html {
 
 .footer-tagline {
   font-size: 1rem;
-  margin: 5px
+  margin: 5px 0 15px;
+}
+
+.footer-nav {
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  margin-bottom: 10px;
+}
+
+.footer-credits {
+  font-size: 0.9rem;
+  margin: 0;
+  opacity: 0.8;
 }
