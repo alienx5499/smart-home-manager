@@ -135,14 +135,14 @@ We ❤️ open source! Contributions are welcome to make this project even bette
 
 ## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f31f/512.webp" width="35" height="30"> Awesome Contributors
 
-<div align="center">
-	<h3>Thank you for contributing to our repository</h3><br>
-	<p align="center">
-		<a href="https://github.com/alienx5499/smart-home-manager/contributors">
-			<img src="https://contrib.rocks/image?repo=alienx5499/smart-home-manager" width="90" height="45" />
-		</a>
-	</p>
+<div align="center" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+	<h3>Thank you for contributing to our repository</h3>
+	<a href="https://github.com/alienx5499/smart-home-manager/contributors">
+		<img src="https://contrib.rocks/image?repo=alienx5499/smart-home-manager" width="180" height="90" style="margin: 20px 0;" />
+	</a>
 </div>
+
+
 
 ---
 
