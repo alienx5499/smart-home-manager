@@ -6,9 +6,15 @@
 
 ![Build Passing](https://img.shields.io/badge/build-passing-success?style=flat-square)
 ![Views](https://hits.dwyl.com/alienx5499/smart-home-manager.svg)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/alienx5499/smart-home-manager/blob/main/CONTRIBUTING.md)
-[![License: MIT](https://custom-icon-badges.herokuapp.com/github/license/alienx5499/smart-home-manager?logo=law&logoColor=white)](https://github.com/alienx5499/smart-home-manager/blob/main/LICENSE)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat-square)](https://github.com/alienx5499/Smart-home-manager/blob/main/CONTRIBUTING.md)
+[![License: MIT](https://custom-icon-badges.herokuapp.com/github/license/alienx5499/Smart-home-manager?logo=law&logoColor=white)](https://github.com/alienx5499/Smart-home-manager/blob/main/LICENSE)
 ![Security](https://snyk.io/test/github/dwyl/hapi-auth-jwt2/badge.svg?targetFile=package.json)
+![⭐ GitHub stars](https://img.shields.io/github/stars/alienx5499/Smart-home-manager?style=social)
+![🍴 GitHub forks](https://img.shields.io/github/forks/alienx5499/Smart-home-manager?style=social)
+![Commits](https://badgen.net/github/commits/alienx5499/Smart-home-manager)
+![🐛 GitHub issues](https://img.shields.io/github/issues/alienx5499/Smart-home-manager)
+![📂 GitHub pull requests](https://img.shields.io/github/issues-pr/alienx5499/Smart-home-manager)
+![💾 GitHub code size](https://img.shields.io/github/languages/code-size/alienx5499/Smart-home-manager)
 
 
 🔗 **[Visit the Live Demo](#)** | 📑 **[Explore Documentation](#)**
