@@ -10,6 +10,7 @@ html {
   background: #121212;
   color: #ffffff;
 }
+
 .ark-navbar {
   display: flex;
   align-items: center;
@@ -40,59 +41,7 @@ html {
   padding: 0;
 }
 
-/* Navigation Links Float Shadow Hover Effect */
-.nav-links a {
-  align-items: center;
-  background-color: #333; /* Consistent dark background */
-  color: #333333; /* Yellow text for visibility */
-  border: 2px solid transparent; /* No border initially */
-  border-radius: 5px; /* Smooth rounded edges */
-  padding: 10px 20px; /* Proportional padding */
-  font-size: 16px; /* Readable font size */
-  font-weight: 500;
-
-  text-transform: uppercase;
-  transition: all 0.3s ease; /* Smooth hover effect */
-  cursor: pointer;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  text-decoration: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  letter-spacing: 4px;
-  background-image: linear-gradient(
-    144deg,
-    #ffff00,
-    #ffea00 25%,
-    #af40ff 75%,
-    #9d00ff
-  ); /* Gradient background */
-}
-
-.nav-links a:hover {
-  box-shadow: 0 0 10px #ffff00, 0 0 1cap #ffea00, 0 0 20px #af40ff,
-    0 0 30px #9d00ff, 0 0 30px #ffff00; /* Enhanced glow on hover */
-  transform: scale(1.05); /* Even glowing shadow */
-}
-
-/* Default active button styling */
-.nav-links a.active {
-  transform: scale(0.95); /* Slight shrink on click */
-  box-shadow: 0 0 15px #ffff00, 0 0 25px #ffea00, 0 0 35px #af40ff,
-    0 0 45px #9d00ff;
-}
-
-/* Remove hover effect for the active button */
-.nav-links a.active:hover {
-  transform: none;
-  box-shadow: none;
-}
-
+.nav-links a,
 .nav-links button {
   align-items: center;
   background-color: #333; /* Consistent dark background */
@@ -102,7 +51,6 @@ html {
   padding: 10px 20px; /* Proportional padding */
   font-size: 16px; /* Readable font size */
   font-weight: 500;
-
   text-transform: uppercase;
   transition: all 0.3s ease; /* Smooth hover effect */
   cursor: pointer;
@@ -117,19 +65,27 @@ html {
   touch-action: manipulation;
   white-space: nowrap;
   letter-spacing: 4px;
-  background-image: linear-gradient(
-    144deg,
-    #ffff00,
-    #ffea00 25%,
-    #af40ff 75%,
-    #9d00ff
-  );
+  background-image: linear-gradient(144deg, #ffff00, #ffea00 25%, #af40ff 75%, #9d00ff);
 }
+
+.nav-links a:hover,
 .nav-links button:hover {
-  box-shadow: 0 0 10px #ffff00, 0 0 20px #ffea00, 0 0 30px #af40ff,
-    0 0 40px #9d00ff, 0 0 50px #ffff00; /* Enhanced glow on hover */
+  box-shadow: 0 0 10px #ffff00, 0 0 20px #ffea00, 0 0 30px #af40ff, 0 0 40px #9d00ff, 0 0 50px #ffff00; /* Enhanced glow on hover */
   transform: scale(1.05);
 }
+
+.nav-links a.active,
+.nav-links button.active {
+  transform: scale(0.95); /* Slight shrink on click */
+  box-shadow: 0 0 15px #ffff00, 0 0 25px #ffea00, 0 0 35px #af40ff, 0 0 45px #9d00ff;
+}
+
+.nav-links a.active:hover,
+.nav-links button.active:hover {
+  transform: none;
+  box-shadow: none;
+}
+
 #side {
   margin-left: 170px;
 }
@@ -137,16 +93,8 @@ html {
 /* Update for small screens */
 @media (max-width: 1390px) {
   .ark-navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 1rem 2rem;
     height: 60px;
-    background: #1e1e1e;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
   }
 
   /* Center the logo at the top of the navbar */
@@ -155,17 +103,13 @@ html {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    font-size: 1.5rem;
-    color: #ff0; /* Yellow */
-    text-transform: uppercase;
-    letter-spacing: 1px;
   }
+
   .nav-links a {
     width: 195px;
     margin-top: 15px;
   }
 
-  /* Sidebar menu on the left */
   .nav-links {
     display: none; /* Hidden by default */
     position: absolute;
@@ -190,52 +134,30 @@ html {
     align-items: center;
   }
 
-  /* Show the nav toggle (hamburger) button */
   .nav-toggle {
     display: block;
     font-size: 2rem;
     color: #fff;
     cursor: pointer;
     z-index: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
-  /* Authentication Buttons inside Sidebar */
   .nav-links button {
-    display: flex; /* Enables flexbox */
-    align-items: center; /* Vertically centers the content */
+    display: flex;
+    align-items: center;
     justify-content: center;
     text-decoration: none;
     padding: 1rem 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
     border-radius: 5px;
     font-size: 17px;
-    color: #000000; /* Text color */
-    border-radius: 8px;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-    font-weight: 500;
-    text-transform: uppercase;
-    background-image: linear-gradient(
-      144deg,
-      #ffff00,
-      #ffea00 25%,
-      #af40ff 75%,
-      #9d00ff
-    );
+    color: #000000;
     width: 80%;
   }
+
   #side {
     margin-top: 280px;
-    margin-left: 0px;
-  }
-
-  .nav-links button:hover {
-    box-shadow: 0 0 10px #ffff00, 0 0 20px #ffea00, 0 0 30px #af40ff,
-      0 0 40px #9d00ff, 0 0 50px #ffff00; /* Enhanced glow on hover */
-    transform: scale(1.05);
+    margin-left: 0;
   }
 }
 
@@ -246,7 +168,6 @@ html {
   }
 }
 
-/* Authentication Buttons for Desktop */
 .auth-buttons {
   display: flex;
   gap: 1rem;
@@ -254,17 +175,22 @@ html {
 
 /* Main Section Styling */
 .features-section {
+  display: flex;
+  gap: 1.5rem;
   padding: 2rem;
   text-align: center;
+  overflow-x: hidden;
+  flex-wrap: wrap;
 }
 
-/* Feature Card */
 .feature-card {
   background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
   padding: 1.5rem;
   margin: 1.5rem auto;
   border-radius: 10px;
-  max-width: 700px;
+  max-width: 300px; /* Make the card smaller */
+  width: 100%;
+  box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -273,14 +199,12 @@ html {
   transform: scale(1.05); /* Slightly enlarge card */
 }
 
-/* Feature Title */
 .feature-card h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 
-/* Feature Description */
 .feature-card p {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -288,7 +212,6 @@ html {
   color: #f9f9f9;
 }
 
-/* Feature List */
 .feature-card ul {
   list-style: none;
   padding: 0;
@@ -311,7 +234,6 @@ html {
   left: 0;
 }
 
-/* Buttons */
 .feature-button {
   background: #af40ff;
   color: #fff;
@@ -361,10 +283,9 @@ html {
   left: 0;
   width: 100%;
   background: #1e1e1e;
-  color: #fff; /* White text */
-  padding: 1rem 2rem; 
+  color: #fff;
+  padding: 1rem 2rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-  z-index: 1000; /* Ensures it stays on top */
   text-align: center;
   font-family: Arial, sans-serif;
 }
@@ -381,30 +302,5 @@ html {
 
 .footer-tagline {
   font-size: 1rem;
-  margin: 5px 0 15px;
-}
-
-.footer-nav {
-  margin-bottom: 10px;
-}
-
-.footer-link {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-size: 1rem;
-}
-
-.footer-link:hover {
-  text-decoration: underline;
-}
-
-.social-links {
-  margin-bottom: 10px;
-}
-
-.footer-credits {
-  font-size: 0.9rem;
-  margin: 0;
-  opacity: 0.8;
+  margin: 5px
 }
