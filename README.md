@@ -33,7 +33,7 @@ XenovaEdge is a state-of-the-art smart home management system designed to revolu
 
 ## **📚 Table of Contents**
 1. [✨ Features](#-features)
-2. [🛠️ Tech Stack](#-tech-stack)
+2. [🦾 Tech Stack](#-tech-stack)
 3. [📸 Screenshots](#-screenshots)
 4. [⚙️ Setup Instructions](#️-setup-instructions)
 5. [🎯 Target Audience](#-target-audience)
@@ -58,7 +58,7 @@ XenovaEdge is a state-of-the-art smart home management system designed to revolu
 
 ---
 
-## **🛠️ Tech Stack**
+## **🦾 Tech Stack**
 
 ### 🌐 **Web Technologies**
 - **Frontend**: React.js, HTML5, CSS3, Tailwind CSS/Bootstrap
