@@ -79,7 +79,7 @@ XenovaEdge is a state-of-the-art smart home management system designed to revolu
 
 ---
 
-## **🧰 Setup Instructions**
+## **👨‍🔧 Setup Instructions**
 
 1. **Clone the Repository**
    ```bash
